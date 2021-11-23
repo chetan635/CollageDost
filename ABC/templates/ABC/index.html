@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Welcome to CollageDost</title>
+    <style>
+        .image_index {
+            padding: 30px;
+        }
+
+        .jb {
+            padding: 100px;
+            background-color: aliceblue;
+        }
+
+        .btn_info {
+            width: 220px;
+
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-size: 17px;
+        }
+        .m{
+            padding-top: 20px;
+        }
+        .apple5{
+            margin-left: 500px;
+        }
+        .apple6{
+            background-image: linear-gradient(#fa709a,#fee140);
+        }
+       
+        
+       
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/ABC">CollageDost</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/ABC">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ABC/IIT">IIT Cutoff</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ABC/NIT">NIT Cutoff</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ABC/IIIT">IIIT Cutoff</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ABC/JEE">JEE MAIN(Cutoff)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ABC/contact">Contact Us</a>
+              </li>
+            
+              
+            </ul>
+            <form class="form-inline apple5 my-5 my-lg-0">
+      
+                <a href="/logout"  class="btn btn-outline-success apple6 my-2 my-sm-0 mx-2" >Logout</a>
+                <a class="navbar-brand" href="/ABC/">Welcome {{request.user}}</a>
+                
+                
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- jumbotron -->
+    <div class="jumbotron jb" style="padding: 90px; background-image: linear-gradient(#80FF72,#7EE8FA
+    );">
+        <div class="container">
+            <h1 class="display-3" style="font-family: cursive;">Welcome To CollageDost.com</h1>
+            <p><b>What is Translation?</b><br>
+                Translation is the communication of meaning from one language (the source) to another language (the
+                target).
+                Translation refers to written information, whereas interpretation refers to spoken information. <br>
+
+                The purpose of translation is to convey the original tone and intent of a message, taking into account
+                cultural
+                and regional differences between source and target languages.</p>
+            <p><a class="btn btn-warning btn-lg" href="/meaning/about" role="button">Learn more &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-1">
+            <div class="col-md-12 m">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <h2 class="mb-0">Indian Institute of Technology</h2>
+                        <div class="mb-1 text-muted">IIT</div>
+                        <p class="card-text mb-auto">IIT JEE is a national level engineering entrance exam
+                            consisting of two stages – JEE Main & JEE Advanced. ... Every year, the IITs conduct a Joint
+                            Entrance Examination (JEE) to select candidates for the 4-year B. Tech, B. Pharm, 5-year B.
+                        </p>
+                        <div class="tp " style="display: flex;align-items: center;justify-content: center;">
+                            <p><a class="btn btn-danger btn-lg btn_info" href="/ABC/IIT/" role="button">Learn more
+                                    &raquo;</a></p>
+                        </div>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block image_index">
+                        <img height="250px" width="400px"
+                            src="https://qph.fs.quoracdn.net/main-qimg-2f77f788f5dd67e52133595d1153522b.webp" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-auto d-none d-lg-block image_index">
+                        <img height="250px" width="400px"
+                            src="https://www.nitt.edu/home/about/High-Resolution-Emblem.png"
+                            alt="">
+
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h2 class="mb-0">National Institute Of Technology</h2>
+                        <div class="mb-1 text-muted">NIT</div>
+                        <p class="card-text mb-auto">National Institute of Technology (NITs) are premier engineering
+                            colleges in India offering admission to degree courses at both undergraduate and
+                            postgraduate level. Check here the list of top NITs with their MHRD-NIRF rankings, courses
+                            offered, total seat intake and cut offs</p>
+                        <div class="tp" style="display: flex;align-items: center;justify-content: center;">
+                            <p><a class="btn btn-info btn-lg btn_info" href="/ABC/NIT/" role="button">Learn more
+                                    &raquo;</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h2 class="mb-0">Indian Institute Of Information Technology</h2>
+                        <div class="mb-1 text-muted">IIIT</div>
+                        <p class="card-text mb-auto">Indian Institutes of Information Technology (IIITs) are a group of
+                            institutes of higher education in India, focused on information technology. Five of them are
+                            established, funded and managed by the Ministry of Human Resource Development. The rest are
+                            set up on the public-private partnership (PPP) model.</p>
+                        <div class="tp" style="display: flex;align-items: center;justify-content: center;">
+                            <p><a class="btn btn-success btn-lg btn_info" href="/ABC/IIIT/" role="button">Learn more
+                                    &raquo;</a></p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-lg-block image_index">
+                        <img height="250px" width="400px"
+                            src="https://img.collegepravesh.com/2017/06/IIIT-Naya-Raipur-Logo.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-auto d-none d-lg-block image_index">
+                        <img height="250px" width="400px"
+                            src="https://www.adarshbarnwal.com/wp-content/uploads/2019/11/jee_mainslogo.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                        <h2 class="mb-0">ALL Maharashtra Collages Based on JEE</h2>
+                        <div class="mb-1 text-muted">JEE</div>
+                        <p class="card-text mb-auto">National Institute of Technology (NITs) are premier engineering
+                            colleges in India offering admission to degree courses at both undergraduate and
+                            postgraduate level. Check here the list of top NITs with their MHRD-NIRF rankings, courses
+                            offered, total seat intake and cut offs</p>
+                        <div class="tp" style="display: flex;align-items: center;justify-content: center;">
+                            <p><a class="btn btn-primary btn-lg btn_info" href="/ABC/JEE/" role="button">Learn more
+                                    &raquo;</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-muted py-5">
+        <div class="container">
+          <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+          </p>
+          <p class="mb-1">Website is releted to&copy; or for the people who want to choose best collage for their carrier</p>
+         
+        </div>
+      </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
